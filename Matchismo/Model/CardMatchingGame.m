@@ -6,13 +6,14 @@
 //  Copyright © 2016 Dalida. All rights reserved.
 //
 #import "CardMatchingGame.h"
+#import "SetCard.h"
 
 @interface CardMatchingGame()
 @property (nonatomic, readwrite) NSUInteger score;
+@property (nonatomic, readwrite) NSInteger matchScore;
 @property (nonatomic, readwrite) NSString *history;
 @property (nonatomic, strong) NSMutableArray *cards;
 @property (nonatomic, strong) NSString *matchtype;
-@property (nonatomic, strong) NSMutableArray *cardsToMatch;
 
 @end
 
@@ -76,18 +77,18 @@ static const int COST_TO_CHOOSE = 1;
                     NSLog(@"cardsToMatch %@", self.cardsToMatch);
 
                     
-                    int matchScore = [card match:self.cardsToMatch];
+                     self.matchScore = [card match:self.cardsToMatch];
                     
-                    NSLog(@"matchScore: %d", matchScore);
+                    NSLog(@"matchScore: %ld", self.matchScore);
                     
                     
-                    if(matchScore) {
+                    if(self.matchScore) {
                         self.cardsToMatch = nil;//do somn
-                        self.score += matchScore * MATCH_BONUS;
-                        self.history = [NSString stringWithFormat:@"Matching %@ & %@ for %d points",
+                        self.score += self.matchScore * MATCH_BONUS;
+                        self.history = [NSString stringWithFormat:@"Matching %@ & %@ for %ld points",
                                         card.contents,
                                         otherCard.contents,
-                                        MATCH_BONUS * matchScore];
+                                        MATCH_BONUS * self.matchScore];
                         otherCard.matched = YES;
                         card.matched = YES;
                         

@@ -10,5 +10,4 @@
 #import "ViewController.h"
 
 @interface SetCardViewController : ViewController
-
 @end

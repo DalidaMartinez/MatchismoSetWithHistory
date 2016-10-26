@@ -10,15 +10,15 @@
 
 @interface SetCard : Card
 
-@property (nonatomic) NSUInteger number;
-@property (nonatomic) NSAttributedString* character;
+@property (nonatomic) NSString* character;
 @property (nonatomic) NSString* shading;
 @property (nonatomic) NSString* color;
+@property (strong, nonatomic) NSNumber *number;
 
-+ (NSUInteger) maxNumber;
 + (NSArray *) validCharacter;
 + (NSArray *) validShading;
 + (NSArray *) validColor;
++ (NSArray *) validNumbers ;
 
 
 

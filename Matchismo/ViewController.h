@@ -14,5 +14,13 @@
 
 -(Deck *)createDeck;
 
+@property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *cardButtons;
+- (void)updateUI;
+- (NSAttributedString *)attributedStringForCard;
+
+
+    
+    
+
 @end
 

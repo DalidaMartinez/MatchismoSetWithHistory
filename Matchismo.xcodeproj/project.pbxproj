@@ -11,6 +11,7 @@
 		BF19FB7A1DB4361300F00168 /* SetCard.m in Sources */ = {isa = PBXBuildFile; fileRef = BF19FB791DB4361300F00168 /* SetCard.m */; };
 		BF19FB7D1DB43A1600F00168 /* SetCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = BF19FB7C1DB43A1600F00168 /* SetCardDeck.m */; };
 		BF19FB831DB44E2A00F00168 /* PlayCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF19FB821DB44E2A00F00168 /* PlayCardViewController.m */; };
+		BF41FD191DC0C9B3004D035F /* GameHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = BF41FD181DC0C9B3004D035F /* GameHistory.m */; };
 		BF57E2361D99967200494125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57E2351D99967200494125 /* main.m */; };
 		BF57E2391D99967200494125 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57E2381D99967200494125 /* AppDelegate.m */; };
 		BF57E23C1D99967200494125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57E23B1D99967200494125 /* ViewController.m */; };
@@ -22,6 +23,7 @@
 		BF57E26C1D99971B00494125 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57E26B1D99971B00494125 /* PlayingCard.m */; };
 		BF57E26F1D99978600494125 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57E26E1D99978600494125 /* Deck.m */; };
 		BF57E2721D9997C400494125 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57E2711D9997C400494125 /* PlayingCardDeck.m */; };
+		BFA3284C1DBBC1FC00186004 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3284B1DBBC1FC00186004 /* HistoryViewController.m */; };
 		BFBF5A831DA07B7F00EAD12A /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBF5A821DA07B7F00EAD12A /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		BF19FB7C1DB43A1600F00168 /* SetCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetCardDeck.m; path = Model/SetCardDeck.m; sourceTree = "<group>"; };
 		BF19FB811DB44E2A00F00168 /* PlayCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayCardViewController.h; sourceTree = "<group>"; };
 		BF19FB821DB44E2A00F00168 /* PlayCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayCardViewController.m; sourceTree = "<group>"; };
+		BF41FD171DC0C9B3004D035F /* GameHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHistory.h; sourceTree = "<group>"; };
+		BF41FD181DC0C9B3004D035F /* GameHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHistory.m; sourceTree = "<group>"; };
 		BF57E2311D99967200494125 /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF57E2351D99967200494125 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF57E2371D99967200494125 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 		BF57E26E1D99978600494125 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
 		BF57E2701D9997C400494125 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		BF57E2711D9997C400494125 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
+		BFA3284A1DBBC1FC00186004 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		BFA3284B1DBBC1FC00186004 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		BFBF5A811DA07B7F00EAD12A /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
 		BFBF5A821DA07B7F00EAD12A /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +118,8 @@
 				BF19FB721DB42ED200F00168 /* SetCardViewController.m */,
 				BF19FB811DB44E2A00F00168 /* PlayCardViewController.h */,
 				BF19FB821DB44E2A00F00168 /* PlayCardViewController.m */,
+				BFA3284A1DBBC1FC00186004 /* HistoryViewController.h */,
+				BFA3284B1DBBC1FC00186004 /* HistoryViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -120,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				BF57E2331D99967200494125 /* Matchismo */,
+				BFA7E7DC1DB81776000BFF95 /* support */,
 				BF57E24D1D99967200494125 /* MatchismoTests */,
 				BF57E2581D99967200494125 /* MatchismoUITests */,
 				BF57E2321D99967200494125 /* Products */,
@@ -139,14 +148,9 @@
 		BF57E2331D99967200494125 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				BF57E2351D99967200494125 /* main.m */,
-				BF57E2371D99967200494125 /* AppDelegate.h */,
-				BF57E2381D99967200494125 /* AppDelegate.m */,
+				BF57E23D1D99967200494125 /* Main.storyboard */,
 				BF19FB741DB4348600F00168 /* Controller */,
 				BF57E2341D99967200494125 /* Model */,
-				BF57E23D1D99967200494125 /* Main.storyboard */,
-				BF57E2401D99967200494125 /* Assets.xcassets */,
-				BF57E2451D99967200494125 /* Info.plist */,
 			);
 			path = Matchismo;
 			sourceTree = "<group>";
@@ -168,6 +172,8 @@
 				BF19FB791DB4361300F00168 /* SetCard.m */,
 				BF19FB7B1DB43A1600F00168 /* SetCardDeck.h */,
 				BF19FB7C1DB43A1600F00168 /* SetCardDeck.m */,
+				BF41FD171DC0C9B3004D035F /* GameHistory.h */,
+				BF41FD181DC0C9B3004D035F /* GameHistory.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -188,6 +194,19 @@
 				BF57E25B1D99967200494125 /* Info.plist */,
 			);
 			path = MatchismoUITests;
+			sourceTree = "<group>";
+		};
+		BFA7E7DC1DB81776000BFF95 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				BF57E2401D99967200494125 /* Assets.xcassets */,
+				BF57E2371D99967200494125 /* AppDelegate.h */,
+				BF57E2381D99967200494125 /* AppDelegate.m */,
+				BF57E2351D99967200494125 /* main.m */,
+				BF57E2451D99967200494125 /* Info.plist */,
+			);
+			name = support;
+			path = Matchismo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,10 +344,12 @@
 			files = (
 				BF57E23C1D99967200494125 /* ViewController.m in Sources */,
 				BF19FB731DB42ED200F00168 /* SetCardViewController.m in Sources */,
+				BF41FD191DC0C9B3004D035F /* GameHistory.m in Sources */,
 				BF57E2391D99967200494125 /* AppDelegate.m in Sources */,
 				BF19FB7D1DB43A1600F00168 /* SetCardDeck.m in Sources */,
 				BF57E2361D99967200494125 /* main.m in Sources */,
 				BF19FB7A1DB4361300F00168 /* SetCard.m in Sources */,
+				BFA3284C1DBBC1FC00186004 /* HistoryViewController.m in Sources */,
 				BF57E26C1D99971B00494125 /* PlayingCard.m in Sources */,
 				BFBF5A831DA07B7F00EAD12A /* CardMatchingGame.m in Sources */,
 				BF57E2721D9997C400494125 /* PlayingCardDeck.m in Sources */,
@@ -473,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = H9R5GQ4T22;
 				INFOPLIST_FILE = Matchismo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -485,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = H9R5GQ4T22;
 				INFOPLIST_FILE = Matchismo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -24,7 +24,10 @@
 //provide an API for CardMatchingGame that allows you to switch matchType property
 
 @property (nonatomic, readonly) NSUInteger score;
+@property (nonatomic, readonly) NSInteger scoreForHistory;
 @property ( nonatomic, readonly) NSString *history;
+@property (nonatomic, strong) NSMutableArray *cardsToMatch;
+
 
 
 
