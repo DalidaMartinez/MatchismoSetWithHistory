@@ -12,7 +12,7 @@
 #import "Deck.h"
 @interface SetCardViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
-//+ (NSAttributedString *) attributedTitleForCard:(SetCard *)card;
+
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UITextField *historyLabel;
 @end
@@ -49,36 +49,6 @@
 }
 
 
-
-
-/*
- +(NSDictionary *) validColor
- {
- return @ {@"cyan" : [UIColor cyanColor],
- @"magenta" : [UIColor magentaColor],
- @"green" : [UIColor greenColor]};
- 
- }
- 
- 
- 
- 
- */
-
-/*
- - (NSString *) titleForCard:(SetCard *)card{
- NSMutableString *title = [[NSMutableString alloc] init];
- if ([card isKindOfClass:[SetCard class]]) {
- SetCard *setCard = (SetCard *) card;
- 
- for (int i = 0; i < setCard.number.integerValue; ++i) {
- 
- [title appendString:[NSString stringWithFormat:@"%@", setCard.character]];
- }
- }
- return card.contents;
- }
- */
 
 -(UIColor *) colorForSetCard:(SetCard *)card {
     UIColor *colorForCard =nil;
@@ -175,72 +145,6 @@
 {
     return [[NSAttributedString alloc] initWithString:card.contents];
 }
-
-
-/*
- 
- 
- 
- 
- -(NSAttributedString *) attributedTitleForCard:(Card *)card{
- NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:[self titleForCard:card]];
- SetCard *setCard = (SetCard *) card;
- 
- UIColor *cardsColor = [self colorForSetCard:setCard];
- 
- 
- [title addAttribute:NSForegroundColorAttributeName value:cardsColor
- range:NSMakeRange(0, title.length)];
- 
- if ([setCard.shading isEqualToString:@"noFill"]) {
- [title addAttribute:NSStrokeWidthAttributeName value:@5
- range:NSMakeRange(0, title.length)];
- 
- if ([setCard.shading isEqualToString:@"striped"]) {
- [title addAttributes:@{NSStrokeWidthAttributeName : @-5,
- NSStrokeColorAttributeName : cardsColor,
- NSForegroundColorAttributeName : [cardsColor colorWithAlphaComponent:0.15]}
- range:NSMakeRange(0, title.length)];
- }
- 
- }
- return title;
- }
- 
- 
- 
- UIColor *foreground = [[self validColor][card.color] copy];
- //foreground is a copy of [UIColor redColor]
- 
- //defines foreground based on shading
- foreground = [foreground colorWithAlphaComponent:[self shading:card.shading]];
- 
- // sets the color of the string to foreground
- [title setAttributes:@{NSStrokeColorAttributeName:card.color,
- NSForegroundColorAttributeName:foreground}
- range:NSMakeRange(0, [title length ])];
- 
- 
- 
- return [title attributedSubstringFromRange:NSMakeRange(0, [title length])];
- }
- 
- 
- */
-
-
-/*- (IBAction)putAnythingonmycardsplease:(UIBarButtonItem *)sender {
- 
- Deck * testDeck = [[SetCardDeck alloc] init];
- 
- for (UIButton *cardButton in self.cardButtons){
- [cardButton setAttributedTitle:[testDeck drawRandomCard ]
- forState:UIControlStateNormal];
- }
- 
- }
- */
-
 
 
 

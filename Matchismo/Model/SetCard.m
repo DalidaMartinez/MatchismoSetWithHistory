@@ -26,61 +26,6 @@
 
 
 
-/*
- 
- - (void) setColor:(NSString *)color {
- if ([[SetCard validColor] containsObject:color]) {
- 
- _color = color;
- }
- }
- 
- -(NSString * ) color
- {
- return _color ? _color : @"?";
- }
- 
- 
- - (void) setCharacter:(NSString *)character {
- if ([[SetCard validCharacter] containsObject:character]) {
- 
- _character = [[NSString alloc]  initWithString:character];
- }
- }
- 
- 
- 
- - (void) setShading:(NSString *)shading
- {
- if ([[SetCard validShading] containsObject:shading]) {
- 
- _shading = shading;
- }
- }
- 
- -(NSString * ) shading
- {
- return _shading ? _shading : @"?";
- }
- 
- + (NSArray *) validCharacter {
- return @ [@"▲",@"⬤", @" ◼" ];
- }
- 
- 
- + (NSArray *) validColor {
- return @ [@"cyan",@"magenta", @"green" ];
- }
- 
- 
- + (NSArray *) validShading {
- return @ [@"fill",@"noFill", @"striped" ];
- }
- */
-
-
-
-
 
 - (NSString *)color {
     return _color ? _color : @"?";
@@ -170,34 +115,6 @@
     
     return (objectsSet.count == 1) || (objectsSet.count == 3);
 }
-
-
-
-/*
- 
- NSSet *charSet = [[NSSet alloc] initWithArray:_character];
- NSSet *colorSet = [[NSSet alloc] initWithArray:_color];
- NSSet *shadingSet = [[NSSet alloc] initWithArray:_shading];
- NSSet *numberSet = [[NSSet alloc] initWithArray:_number];
- 
- 
- if (([colorSet count]==1 || ([colorSet count] == 3)) ||
- 
- (([shadingSet count]== 1 || [shadingSet count] == 3))||
- 
- (([numberSet count]== 1 || [numberSet count]==3))||
- 
- (([charSet count]== 1 || [charSet count] == 3)))
- {
- 
- 
- score = 20;
- }   else {
- score = 0;
- }
- 
- */
-
 
 
 @end
